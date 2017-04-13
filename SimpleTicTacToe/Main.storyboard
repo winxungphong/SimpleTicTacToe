@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_nature" translatesAutoresizingMaskIntoConstraints="NO" id="brr-E7-F1j">
+                                <frame key="frameInset" minY="21" width="604" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ZF-LH-fm2">
+                                <frame key="frameInset" minX="140" minY="146" width="320" height="320"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="ELh-jP-nxu"/>
+                                    <constraint firstAttribute="width" constant="320" id="Y7B-fT-sc2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBq-fk-zN1">
+                                <frame key="frameInset" minX="140" minY="28" width="320" height="46"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="hNt-Lc-Rrs">
+                                        <frame key="frameInset" minX="-13" width="350" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfM-dy-hUZ">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="lan-zj-Cpb"/>
+                                            <constraint firstAttribute="width" constant="58" id="v8u-gY-sjJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NxU-pA-v3F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEm-BR-t30">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Eod-rU-RVy"/>
+                                            <constraint firstAttribute="width" constant="58" id="zeP-Nu-2j6"/>
+                                        </constraints>
+                                        <state key="normal" title="Restart  game"/>
+                                        <connections>
+                                            <action selector="restartMatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GB8-oZ-ABw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5z-E3-meE">
+                                        <frame key="frameInset" minX="7" minY="13" width="79" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJO-2F-KBE">
+                                        <frame key="frameInset" minX="196" minY="13" width="79" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jl-Pw-uyD">
+                                        <frame key="frameInset" minX="80" minY="13" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWe-2c-rRG">
+                                        <frame key="frameInset" minX="278" minY="13" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x_square" translatesAutoresizingMaskIntoConstraints="NO" id="9xt-cA-Fq2">
+                                        <frame key="frameInset" minX="7" minY="32" width="10" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="o_square" translatesAutoresizingMaskIntoConstraints="NO" id="7fQ-FS-XTa">
+                                        <frame key="frameInset" minX="196" minY="32" width="10" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kfM-dy-hUZ" firstAttribute="centerX" secondItem="vBq-fk-zN1" secondAttribute="centerX" constant="-1" id="1eX-xY-z6i"/>
+                                    <constraint firstItem="vEm-BR-t30" firstAttribute="centerX" secondItem="vBq-fk-zN1" secondAttribute="centerX" id="1xG-RA-bU3"/>
+                                    <constraint firstAttribute="height" constant="46" id="ESE-tm-jlL"/>
+                                    <constraint firstItem="kfM-dy-hUZ" firstAttribute="centerY" secondItem="vBq-fk-zN1" secondAttribute="centerY" constant="-9.5" id="FQB-dI-J4E"/>
+                                    <constraint firstAttribute="bottom" secondItem="vEm-BR-t30" secondAttribute="bottom" constant="1" id="V60-pn-lEg"/>
+                                    <constraint firstAttribute="width" constant="320" id="gp9-lj-J9y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vBq-fk-zN1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ET-IQ-zaH"/>
+                            <constraint firstItem="1ZF-LH-fm2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="6" id="GHw-aE-mQ5"/>
+                            <constraint firstItem="vBq-fk-zN1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="i3Y-6H-YZW"/>
+                            <constraint firstItem="1ZF-LH-fm2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v2i-Px-1Yw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblScore1" destination="0Jl-Pw-uyD" id="bzk-rf-MXv"/>
+                        <outlet property="lblScore2" destination="YWe-2c-rRG" id="ekb-ud-QGD"/>
+                        <outlet property="vwBase" destination="1ZF-LH-fm2" id="mvP-mb-jep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="257"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_nature" width="183" height="275"/>
+        <image name="o_square" width="30" height="30"/>
+        <image name="square" width="105" height="90"/>
+        <image name="x_square" width="30" height="30"/>
+    </resources>
+</document>
